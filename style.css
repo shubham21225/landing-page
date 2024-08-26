@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family:sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/* #box{
+    height: 60vh;
+    width:80vw;
+    background-color: green;
+}
+#inner{
+    height: 50vh;
+    width: 60vw;
+    background-color: rgb(53, 74, 192);
+}
+
+#inner h1{
+    font-size:5vw;
+} */
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(68, 68, 219);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.308);
+}
+nav h1{
+    padding: 0 5vw;
+    font-size: 2rem;
+    color: #fffefe;
+}
+#nav-part2{
+    /* height: 100%; */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    padding: 0 4vw;
+    
+    /* background-color: rgb(23, 104, 175); */
+}
+#nav-part2 h4 {
+    font-weight:600;
+    color: rgb(224, 219, 219);
+    font-size: 20px;
+}
+
+#nav-part2 h4:hover {
+    font-weight:700;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+   
+    cursor: pointer;
+
+}
+#nav-part2 i{
+    font-size: 2rem;
+    display: none;
+}
+
+#content{
+                                    /* #importnt calc fnction  */
+    height: calc(100% - 10vh );  
+    width: 100%;
+    /* background-color: rgba(189, 95, 112, 0.541); */
+    display: flex;
+    
+}
+#left{
+    height: 100%;
+    width: 55%;
+    /* background-color: #3fc989; */
+    padding: 6vw 5vw;
+    /* border-right: 2px solid black; */
+    
+}
+#left h1{
+
+    font-size: 5vw;
+    line-height: 5vw;
+}
+
+#left span{
+    color: rgb(145, 145, 255);
+}
+
+#left p{
+    font-size:2vw;
+    color: #666;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom:60px;
+
+}
+button{
+    background-color: rgb(87, 87, 240);
+    font-size: 1vw;
+    padding:1vw 2vw ;
+    color: white;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 1px 2px 9px rgb(82, 67, 218);
+
+}
+
+button:hover{
+    background-color: rgba(90, 90, 253, 0.781);
+    cursor: pointer;
+    box-shadow: 1px 2px 9px rgb(82, 67, 218);
+}
+
+
+
+#right{
+    height: 100vh;
+    width: 45%;  
+    /* background-color: #9944d1; */
+}
+#right img{
+    height: 100%;
+    width: 100%;
+}
+#slider h4{
+    display: none;
+}
+@media (max-width : 800px) {
+     nav{
+        /* background-color: rgb(145, 145, 255); */
+        color:#ffff;
+     }
+     nav h4{
+        padding: 0 4vw;
+        font-size: 1rem;
+         display: none;
+    }
+    #nav-part2 i{
+        font-size: 2rem;
+        display: block;
+    }
+    #content{
+        display: block;
+    }
+    #left{
+        height: 50%;
+        width: 100%;
+        padding-top: 6vh;
+    }
+    #right{
+        height: calc(100% - 50%);
+        width: 100%;
+        /* background-color: aqua; */
+    }
+
+
+
+
+
+    #left h1{
+
+        font-size: 8vw;
+        line-height: 9vw;
+    }
+    
+    #left span{
+        color:rgb(145, 145, 255);
+    }
+    
+    #left p{
+        font-size: 2.5vw;
+        color: #666;
+        width: 80%;
+        margin-top: 2.5vw;
+        margin-bottom: 3.6vw;
+    
+    }
+    button{
+        background-color: rgb(85, 85, 231);
+        font-size: 2.2vw;
+        padding:1vw 2vw ;
+        color: white;
+        border: none;
+        font-weight: 600;
+        border-radius: 5px;
+    
+        /* box-shadow: 1px 2px 9px rgb(70, 252, 94); */
+    
+    }
+    button:hover{
+        background-color: rgba(90, 90, 253, 0.781);
+        cursor: pointer;
+        /* box-shadow: 1px 2px 6px rgb(82, 67, 218); */
+    }
+
+     #right img{
+        height: 100%;
+        width: 90%;
+        background-color: aqua;
+    } 
+
+
+
+
+
+    #slider{
+        height:calc(100% - 10vh) ;
+        width: 60vw;
+        background-color:rgb(145, 145, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:flex-start;
+        gap: 40px;
+        padding-top: 20vh;
+        z-index: 99;
+        position: fixed;
+        top: 9.5vh;
+        right: 0;
+        display: none;
+        border-top: 1px solid rgba(0, 0, 0, 0.219);
+   
+    }
+    
+    #slider h4{  
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        display: block;
+        z-index: 99;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+       
+        
+    }
+    #slider h4:hover{
+       /* border-bottom: 4px solid black; */
+       color: rgb(0, 0, 0);
+       cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.377);
+        padding:5px 10px;
+       
+    }
+
+}
